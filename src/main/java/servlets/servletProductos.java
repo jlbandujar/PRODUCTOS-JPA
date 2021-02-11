@@ -47,7 +47,9 @@ public class servletProductos extends HttpServlet {
             out.println("<title>Servlet servletProductos</title>");            
             out.println("</head>");
             out.println("<body>");
-//            for (  )
+            for ( Productos p:  misProductos ) {
+                 out.println("<h1>" + p.getNombre() + "</h1>");
+            }
             out.println("<h1>Servlet servletProductos at " + misProductos.size() + "</h1>");
             out.println("</body>");
             out.println("</html>");
